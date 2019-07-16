@@ -15,12 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import views
+from . views import indexViews
 
 
 urlpatterns = [
     # 后台主页
-    url(r'^', views.index, name='index')
+    url(r'^', indexViews.Index, name='index')
 
     # 登录
     # 退出
